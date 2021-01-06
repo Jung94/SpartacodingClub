@@ -22,6 +22,9 @@
 
     <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
     <style>
+        body {
+            padding: 50px 0 100px 0;
+        }
         .image {
             background-image: url("https://www.laborplus.co.kr/news/photo/202003/23832_30682_4525.jpg");
             background-size: cover;
@@ -32,7 +35,7 @@
             border: 1px solid powderblue;
             border-radius: 4px;
 
-            margin: 50px auto;
+            margin: 0 auto 50px;
         }
         .name_input {
             margin: 0 10px;
@@ -50,11 +53,32 @@
             margin: 20px 0;
         }
         .parti {
-            width: 600px;
+            width: 480px;
             margin: 0 auto;
         }
         .title h3 {
             display: inline;
+        }
+        .title span {
+            font-size: 15px;
+
+        }
+        .par_btn {
+            width: 200px;
+            color: rgb(56, 56, 56);
+            font-weight: bold;
+            border-radius: 5px;
+            border: 1px solid rgb(88, 88, 88);
+            background-color: white;
+
+            padding: 20px auto;
+            margin: 40px auto;
+            display: block;
+        }
+        .par_btn:hover {
+            color: rgb(255, 255, 255);
+            background-color: powderblue;
+            border: 1px solid powderblue;
         }
     </style>
 </head>
@@ -63,9 +87,10 @@
     <div class="image"></div>
     <div class="parti">
         <div class="title">
-            <h3>미리 준비하는 패키지 여행</h3><span>     가격 : 1,980,000원</span><br><br>
+            <h3>미리 준비하는 패키지 여행 <span>가격 : 1,980,000원</span></h3><br><br>
             <p>코로나19로 지친 여러분들을 위한 깜짝 이벤트!<br>
-                한 달 후 열릴 하늘길에 대비해 저희 하늘투어에서 패키지 여행을 준비합니다.<br>
+                한 달 후 열릴 하늘길에 대비해<br>
+                저희 하늘투어에서 패키지 여행을 준비합니다.<br>
                 아래 '참여하기'를 통해 저희와 함께 패키지 여행을 떠나보아요!
             </p><br>
         </div>
@@ -84,6 +109,7 @@
                 <span class="pho_text">전화번호 : </span><input class="name_input" type="text" />
             </div>
         </div>
+        <button class="par_btn">참여하기</button>
     </div>
 </body>
 
