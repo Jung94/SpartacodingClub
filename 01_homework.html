@@ -43,11 +43,11 @@
         .name_text {
             margin: 0 20px 0 20px;
         }
-        .num_text, .add_text {
-            margin: 0 73px 0 20px;
+        .add_text {
+            margin: 0 72px 0 20px;
         }
         .pho_text {
-            margin: 0 41px 0 20px;
+            margin: 0 40px 0 20px;
         }
         .par {
             margin: 20px 0;
@@ -96,6 +96,14 @@
         .select {
             font-size: 12px;
         }
+        .num_text {
+            margin: 0 87px 0 20px;
+
+        }
+        .form-select {
+            width: 182px;
+            height: 31px;
+        }
     </style>
 </head>
 
@@ -115,15 +123,15 @@
             <div class="par">
                 <span class="name_text">참여자 성함 : </span><input class="name_input" type="text" />
             </div>
-            <div class="par">                
+            <div class="input-group mb-3">
                 <span class="num_text">수량 : </span>
-                <div class="dropdown">
-                    <div class="dropdown-select">
-                        <span class="select">-- 수량을 선택하세요 --</span>
-                        <i class="down icon"></i>
-                    </div>
-                </div>
-            </div>
+                <select class="form-select" id="inputGroupSelect02">
+                  <option class="form-select-text" selected>수량 선택</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
             <div class="par">
                 <span class="add_text">주소 : </span><input class="name_input" type="text" />
             </div>
