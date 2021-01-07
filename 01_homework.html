@@ -80,6 +80,22 @@
             background-color: powderblue;
             border: 1px solid powderblue;
         }
+        .dropdown {
+            width: 200px;
+        }
+        .dropdown-select {
+            padding: 4px;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 2px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .select {
+            font-size: 12px;
+        }
     </style>
 </head>
 
@@ -99,8 +115,14 @@
             <div class="par">
                 <span class="name_text">참여자 성함 : </span><input class="name_input" type="text" />
             </div>
-            <div class="par">
-                <span class="num_text">수량 : </span><input class="name_input" type="text" />
+            <div class="par">                
+                <span class="num_text">수량 : </span>
+                <div class="dropdown">
+                    <div class="dropdown-select">
+                        <span class="select">-- 수량을 선택하세요 --</span>
+                        <i class="down icon"></i>
+                    </div>
+                </div>
             </div>
             <div class="par">
                 <span class="add_text">주소 : </span><input class="name_input" type="text" />
