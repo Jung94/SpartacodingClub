@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function 함수명 ([인자...[,인자]]){
+        //     코드
+        //     return 반환값
+        // }
+        // function num(){
+        //     document.write(1);
+        // }
+        // num();
+
+        // function num(){
+        //     for(let i = 0; i < 10; i++){
+        //         document.write(i);
+        //     }
+        // }
+        // num();
+
+        function get(arg){
+            return arg*100+'<br>';
+        }
+        document.write(get(5));
+
+        function  gets(arg1, arg2){
+            return arg1 + arg2+'<br>';
+        }
+        document.write(gets(2, 3));
+// 위 함수와 아래 함수는 같음. 함수를 표현하는 여러 방법 중 하나
+        gets = function(arg1, arg2){
+            return arg1 + arg2+'<br>';
+        }
+        document.write(gets(2, 3));
+    </script>
+</body>
+</html>
