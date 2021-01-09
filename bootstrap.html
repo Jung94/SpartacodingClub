@@ -49,6 +49,18 @@
             padding: 25px;
         }
     </style>
+    <script>
+        function openclose(){
+            let status = $('#post-box').css('display');
+            if (status === 'block') {
+                $('#post-box').hide();
+                $('#posting-box-btn').text('포스팅박스 열기');
+            } else {
+                $('#post-box').show();
+                $('#posting-box-btn').text('포스팅박스 닫기');
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -58,10 +70,10 @@
             <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
             <hr class="my-4">
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
+                <a id="posting-box-btn" onclick="openclose()" class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
             </p>
         </div>
-        <div class="posting-box">
+        <div class="posting-box" id="post-box">
             <div class="form-group">
                 <label for="exampleInputEmail1">아티클 URL</label>
                 <input type="email" class="form-control" aria-describedby="emailHelp"
