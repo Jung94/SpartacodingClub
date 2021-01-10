@@ -365,8 +365,16 @@
             if(gu_mise < 40) {
                 document.write(gu_name, gu_mise+'<br>');
             }
-            
         }
+
+        for (let i = 0; i < mise_list.length; i++) {
+            let gu_name = mise_list[i]['MSRSTE_NM'];
+            let gu_mise = mise_list[i]['IDEX_NM'];
+            if (gu_mise != '좋음'){
+                document.write(gu_name, gu_mise +'<br>');
+            }
+        }
+        
     </script>
 </body>
 </html>
