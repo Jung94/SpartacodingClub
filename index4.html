@@ -139,6 +139,17 @@
             })
         }
 
+        function get_rate() {
+            $.ajax({
+                type: "GET",
+                url: "https://api.manana.kr/exchange/rate.json",
+                data: {},
+                success: function (response) {
+                    let now_rate = response[1]['rate'];
+                    $('#now-rate').text(now_rate);
+                }
+            })
+        }
 
     </script>
 </head>
