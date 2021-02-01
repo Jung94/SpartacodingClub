@@ -38,7 +38,7 @@
                     let rows = response['getStationListHist']['row']
 
                     for (let i = 0; i < rows.length; i++) {
-                        let place = rows[i]['stationName']
+                        let place = rows[i]['stationName'].split('.')[1]
                         let rack = rows[i]['rackTotCnt']
                         let bike = rows[i]['parkingBikeTotCnt']
 
