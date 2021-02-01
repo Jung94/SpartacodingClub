@@ -29,6 +29,7 @@
 
     <script>
         function q1() {
+            $('#names-q1').empty()
             $.ajax({
                 type: "GET",
                 url: "http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/bikeList/1/99/2021020115",
@@ -43,8 +44,19 @@
 
                         let temp_html = ``
                         if (bike < 9) {
-                            
+                            temp_html = `<tr class="urgent">
+                                            <td>${place}</td>
+                                            <td>${rack}</td>
+                                            <td>${bike}</td>
+                                        </tr>`
+                        } else {
+                            temp_html = `<tr>
+                                            <td>${place}</td>
+                                            <td>${rack}</td>
+                                            <td>${bike}</td>
+                                        </tr>`
                         }
+                        $('#names-q1').append(temp_html)
                     }
                 }
             })
