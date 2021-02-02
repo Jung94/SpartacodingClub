@@ -44,13 +44,17 @@
 
                         let temp_html = ``
                         if (bike < 3) {
-                            temp_html = `<tr>
-                                            <td>거치대 위치</td>
-                                            <td>거치대 수</td>
-                                            <td>현재 거치된 따릉이 수</td>
+                            temp_html = `<tr class="urgent">
+                                            <td>${place}</td>
+                                            <td>${rack}</td>
+                                            <td>${bike}</td>
                                         </tr>`
                         } else {
-
+                            temp_html = `<tr>
+                                            <td>${place}</td>
+                                            <td>${rack}</td>
+                                            <td>${bike}</td>
+                                        </tr>`
                         }
                         $('#names-q1').append(temp_html)
                     }
