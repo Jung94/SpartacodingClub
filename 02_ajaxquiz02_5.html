@@ -41,6 +41,18 @@
                         let place = rows[i]['stationName']
                         let rack = rows[i]['rackTotCnt']
                         let bike = rows[i]['parkingBikeTotCnt']
+
+                        let temp_html = ``
+                        if (bike < 3) {
+                            temp_html = `<tr>
+                                            <td>거치대 위치</td>
+                                            <td>거치대 수</td>
+                                            <td>현재 거치된 따릉이 수</td>
+                                        </tr>`
+                        } else {
+
+                        }
+                        $('#names-q1').append(temp_html)
                     }
                 }
             })
