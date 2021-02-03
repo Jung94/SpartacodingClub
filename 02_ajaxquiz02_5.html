@@ -35,8 +35,13 @@
                 url: "http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/bikeList/1/99/2021020115",
                 data: {},
                 success: function (response) {
-                    let rows = response['']['row']
+                    let rows = response['getStationListHist']['row']
                     for ( i = 0; i < rows.length; i++) {
+                        let place = rows[i]['stationName']
+                        let rack = rows[i]['rackTotCnt']
+                        let bike = rows[i]['parkingBikeTotCnt']
+
+                        let temp_html = ``
                         
                     }
                 }
