@@ -43,14 +43,19 @@
 
                         let temp_html = ``
                         if (bike < 5) {
-                            temp_html = `<tr>
+                            temp_html = `<tr class="urgent">
                                             <td>${place}</td>
                                             <td>${rack}</td>
                                             <td>${bike}</td>
                                         </tr>`
                         } else {
-
+                            temp_html = `<tr>
+                                            <td>${place}</td>
+                                            <td>${rack}</td>
+                                            <td>${bike}</td>
+                                        </tr>`
                         }
+                        $('#names-q1').append(temp_html)
                     }
                 }
             })
