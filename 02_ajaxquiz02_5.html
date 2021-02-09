@@ -42,20 +42,7 @@
                         let bike = rows[i]['parkingBikeTotCnt']
 
                         let temp_html = ``
-                        if (bike < 4) {
-                            temp_html = `<tr>
-                                            <td>${place}</td>
-                                            <td>${rack}</td>
-                                            <td>${bike}</td>
-                                        </tr>`
-                        } else {
-                            temp_html = `<tr>
-                                            <td>${place}</td>
-                                            <td>${rack}</td>
-                                            <td>${bike}</td>
-                                        </tr>`
-                        }
-                        $('#names-q1').append(temp_html)
+                        
                     }
                 }
             })
