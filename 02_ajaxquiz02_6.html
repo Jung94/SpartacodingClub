@@ -36,7 +36,14 @@
                 data: {},
                 success: function (response) {
                     let rows = response['getStationListHist']['row']
-                    
+                    for (let i = 0; i < rows.length; i++) {
+                        let place = rows[i]['']
+                        let rack = rows[i]['']
+                        let bike = rows[i]['']
+
+                        let temp_html = ``
+                        
+                    }
                 }
             })
         }
