@@ -37,7 +37,12 @@
                 success: function (response) {
                     let rows = response['rentBikeStatus']['row']
 
-                    }
+                    for (let i = 0; i < rows.length; i++){
+                        let place = rows[i]['stationName'].split('.')[1]
+                        let rack = rows[i]['rackTotCnt']
+                        let bike = rows[i]['parkingBikeTotCnt']
+
+                                           }
                 }
             })
         }
