@@ -21,11 +21,10 @@
         function q1() {
             $.ajax({
                 type: "GET",
-                url: "https://api.thecatapi.com/v1/images/search",
+                url: "여기에URL을입력",
                 data: {},
                 success: function (response) {
-                    let cat = response[0]['url']
-                    $('#img-cat').attr('src',cat)
+                    console.log(response)
                 }
             })
         }
