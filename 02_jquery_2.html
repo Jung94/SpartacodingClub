@@ -30,10 +30,11 @@
 
         function q2() {
             let input_q2 = $('#input-q2').val();
-            if (input_q2.includes('@') == false) {
-                alert('이메일이 아닙니다');
+            if (input_q2.includes('@')) {
+                let domain = input_q2.split('@')[1].split('.')[0]
+                alert(domain);
             } else {
-                alert(input_q2.split('@')[1].split('.')[0]);
+                alert('이메일이 아닙니다');
             }
             // 1. input-q2 값을 가져온다.
             // 2. 만약 가져온 값에 @가 있으면 (includes 이용하기 - 구글링!)
