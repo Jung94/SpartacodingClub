@@ -58,6 +58,7 @@
     </style>
     <script>
         $(document).ready(function(){
+            $('#cards-box').empty();
             listing()
         }); 
 
@@ -75,7 +76,17 @@
                         let comment = rows[i]['comment']
                         let url = rows[i]['url']
 
-                        console.log(image, title, desc, comment, url);
+                        let temp_html = `<div class="card">
+                                            <img class="card-img-top"
+                                                src="${image}"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <a href="${url}" class="card-title">${title}</a>
+                                                <p class="card-text">${desc}</p>
+                                                <p class="card-text comment">${comment}</p>
+                                            </div>
+                                        </div>`
+                                        $('#cards-box').append(temp_html);
 
                     }
                 }
