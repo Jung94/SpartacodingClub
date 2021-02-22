@@ -68,7 +68,14 @@
                 url: "http://spartacodingclub.shop/post",
                 data: {},
                 success: function (response) {
-                    
+                    let rows = response['articles']
+                    for (let i = 0; i < rows.length; i++) {
+                        let comment = rows[i]['comment']
+                        let comment = rows[i]['comment']
+                        let comment = rows[i]['comment']
+                        let comment = rows[i]['comment']
+                        let comment = rows[i]['comment']
+                    }
                 }
             })
         }
