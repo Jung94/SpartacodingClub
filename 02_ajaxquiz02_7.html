@@ -36,7 +36,12 @@
                 data: {},
                 success: function (response) {
                     let rows = response['getStationList']['row']
-                    
+                    for (let i = 0; i < rows.length; i++) {
+                        let name = rows[i]['stationName'].split('.')[1]
+                        let rack = rows[i]['rackTotCnt']
+                        let bike = rows[i]['parkingBikeTotCnt']
+
+                    }
                 }
             })
         }
