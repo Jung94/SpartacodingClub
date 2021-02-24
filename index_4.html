@@ -63,7 +63,15 @@
         }); 
 
         function listing() {
-            
+            $.ajax({
+                type: "GET",
+                url: "http://spartacodingclub.shop/post",
+                data: {},
+                success: function (response) {
+                    let rows = response['articles']
+                    
+                }
+            })
         }
 
         function openClose() {
